@@ -1,0 +1,29 @@
+.turtle {
+  display: none;
+}
+
+.snake {
+  display: none;
+}
+
+.frog {
+  display: none;
+}
+
+.title{
+  margin-top: 40px;
+}
+
+.frontpage-list {
+font-size: 20px;
+}
+
+.title {
+  width: 600px;
+  margin: auto;
+}
+
+/* img {
+  width: 100%
+  height: auto;
+} */
