@@ -1,19 +1,19 @@
 $(document).ready(function(){
-  $(".turtleSelect").click(function(){
-    $(".turtle").show();
-    $(".snake").hide();
-    $(".frog").hide();
-  });
-
-  $(".snakeSelect").click(function(){
-    $(".snake").show();
-    $(".turtle").hide();
-    $(".frog").hide();
-  });
-
-  $(".frogSelect").click(function(){
-    $(".frog").show();
-    $(".snake").hide();
-    $(".turtle").hide();
+  $(".button").click(function() {
+    event.preventDefault();
+    var animals = $("input:radio[name=animals]:checked").val();
+    if (animals === "turtles") {
+      $(".turtle").show();
+      $(".snake").hide();
+      $(".frog").hide();
+    } else if (animals === "snakes") {
+      $(".snake").show();
+      $(".turtle").hide();
+      $(".frog").hide();
+    } else {
+      $(".frog").show();
+      $(".turtle").hide();
+      $(".snake").hide();
+    }
   });
 });

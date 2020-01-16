@@ -13,11 +13,25 @@
   <div class="container">
     <div class="title">
       <h1>Pick an Animal to Learn About!</h1>
-      <ul class=frontpage-list>
-        <li class="turtleSelect">Turtles</li>
-        <li class="snakeSelect">Snakes</li>
-        <li class="frogSelect">Frogs</li>
-      </ul>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animals" value="turtles" checked>
+          Turtles
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animals" value="snakes">
+          Snakes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animals" value="frogs">
+          Frogs
+        </label>
+      </div>
+      <button class="button" type="btn btn-standard">Submit</button>
     </div>
     <div class="turtle">
       <h1>TURTLE POWER!</h1>
